@@ -8,6 +8,8 @@ Steps taken:
         4 Points with lines in between to create a rectangle
         5 points in the form of a circle connected with the Arc function
 ![alt text](geom.png)
+
+:
     2-Extruding the mesh
     3-Adding Physical Groups for each side of the Mesh for example : top, bottom, left, right ...
     4-put the Mush in 3D and Export as msh version 2

@@ -1,21 +1,34 @@
 # Visualizing-the-flow-around-a-cylinder-with-OpenFoam-Gmsh
 Simulation and visualization of a laminar(low Reynolds Number) flow around a circular cylinder using OpenFOAM ,specifically with icoFoam Solver. The Mesh was generated with Gmsh and results visualized in ParaView.
 
-Steps taken: 
-    1.Creating the geometry of the Mesh in Gmsh:
-            4 Points with lines in between to create a rectangle
-            5 points in the form of a circle connected with the Arc function
-            ![Geometry](geom.png)
-    2.Extruding the mesh
-    3.Adding Physical Groups for each side of the Mesh for example : top, bottom, left, right ...
-    4.put the Mesh in 3D and Export as msh version 2
-    5.Open OpenFoam and copy the directory of $FOAM_TUTORIALS/incompressible/icoFoam/cavity/cavity 
-    6.run the function gmshToFoam
-    7.Modify the boundary conditions of p and U
-    8.Run icoFoam and do the command : touch case.foam and open the file in Paraview
-    9.Visualize the data 
-        ![Animation](video.gif)
-    10.Run the filter plot over Line to get a graph of U and p
+## Steps Taken
+
+1. **Creating the geometry in Gmsh:**
+   - Created 4 points with lines to form a rectangle.
+   - Created 5 points in a circle shape connected with the Arc function.
+   ![Geometry](geom.png)
+
+2. **Extruding the mesh** to create a 3D volume.
+
+3. **Adding Physical Groups** for each side of the mesh (e.g., top, bottom, left, right, inlet, outlet).
+
+4. **Exporting the Mesh** as `.msh` format (Version 2).
+
+5. **Setting up OpenFOAM:** Copied the directory from `$FOAM_TUTORIALS/incompressible/icoFoam/cavity/cavity`.
+
+6. **Converting the mesh** by running the command: `gmshToFoam`.
+
+7. **Modifying Boundary Conditions** for pressure (`p`) and velocity (`U`).
+
+8. **Running the simulation:**
+   - Executed `icoFoam`.
+   - Ran `touch case.foam` to prepare for visualization.
+
+9. **Visualizing the data** in ParaView.
+   ![Animation](video.gif)
+
+10. **Post-processing:** Used the "Plot Over Line" filter to generate graphs of Velocity (U) and Pressure (p).
+    ![Graph](graph.png)
 
 
 

@@ -2,6 +2,8 @@
 Simulation and visualization of fluid flow around a circular cylinder using OpenFOAM ,specifically with icoFoam Solver. The Mesh was generated with Gmsh and results visualized in ParaView.
 
 Steps taken: 
+
+
     1-Creating the geometry of the Mesh in Gmsh:
         4 Points with lines in between to create a rectangle
         5 points in the form of a circle connected with the Arc function

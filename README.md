@@ -8,10 +8,9 @@ Steps taken:
     2-Extruding the mesh
     3-Adding Physical Groups for each side of the Mesh for example : top, bottom, left, right ...
     4-put the Mush in 3D and Export as msh version 2
-
-    4-Open OpenFoam and copy the directory of $FOAM_TUTORIALS/incompressible/icoFoam/cavity/cavity 
-    5-run the function gmshToFoam
-    6-Modify the boundary conditions of p and U
-    7-Run icoFoam and do the command : touch case.foam and open the file in Paraview
-    8-Visualize the data 
-    9-Run the filter plot over Line to get a graph of U and p
+    5-Open OpenFoam and copy the directory of $FOAM_TUTORIALS/incompressible/icoFoam/cavity/cavity 
+    6-run the function gmshToFoam
+    7-Modify the boundary conditions of p and U
+    8-Run icoFoam and do the command : touch case.foam and open the file in Paraview
+    9-Visualize the data 
+    10-Run the filter plot over Line to get a graph of U and p
